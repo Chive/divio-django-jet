@@ -6,7 +6,7 @@ urlpatterns = [
     url(r'^jet/', include('jet.urls', 'jet')),
 ]
 
-if settings.DIVIO_DJANGO_JET_ENABLE_DASHBOARD0:
+if settings.DIVIO_DJANGO_JET_ENABLE_DASHBOARD:
     urlpatterns.append(
         url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     )
